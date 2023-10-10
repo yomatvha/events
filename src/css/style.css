@@ -1,0 +1,53 @@
+:root {
+  --cell-size: 120px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #555;
+}
+
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.cell {
+  position: relative;
+  background-color: #fff;
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+.goblin {
+  width: 120px;
+  height: 120px;
+  background: url('../img/goblin.png');
+}
+
+.points {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.misses {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
